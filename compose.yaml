@@ -1,0 +1,14 @@
+version: '3'
+services:
+  web:
+    build: .
+    ports:
+      - "8000:5000"
+  redis:
+    image: "redis:alpine"
+    ports:
+      - "6379:6379"
+    # command: ["redis-server", "--requirepass", "bullshit1"]
+    environment:
+      - REDIS_PASSWORD="bullshit1"
+
