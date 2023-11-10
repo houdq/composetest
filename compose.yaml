@@ -8,7 +8,6 @@ services:
     image: "redis:alpine"
     ports:
       - "6379:6379"
-    # command: ["redis-server", "--requirepass", "bullshit1"]
     environment:
-      - REDIS_PASSWORD="bullshit1"
+      - REDIS_PASSWORD="bullshit"
 
